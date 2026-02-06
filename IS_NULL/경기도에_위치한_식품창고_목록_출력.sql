@@ -1,4 +1,4 @@
--- 문제 링크: https://school.programmers.co.kr/learn/courses/30/lessons/131114
+ -- 문제 링크: https://school.programmers.co.kr/learn/courses/30/lessons/131114
 SELECT
     WAREHOUSE_ID,
     WAREHOUSE_NAME,
