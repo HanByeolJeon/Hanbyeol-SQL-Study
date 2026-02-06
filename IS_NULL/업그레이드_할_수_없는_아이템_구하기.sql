@@ -1,0 +1,11 @@
+ -- 문제 링크: https://school.programmers.co.kr/learn/courses/30/lessons/273712
+select T1.ITEM_ID, ITEM_NAME, RARITY
+from ITEM_INFO T1
+JOIN ITEM_TREE T2
+ON T1.ITEM_ID = T2.ITEM_ID
+WHERE T1.ITEM_ID NOT IN (
+    SELECT PARENT_ITEM_ID
+    FROM ITEM_TREE
+    WHERE PARENT_ITEM_ID IS NOT NULL
+)
+ORDER BY T1.ITEM_ID DESC;
